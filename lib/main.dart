@@ -58,8 +58,11 @@ class _MyStatefulWidgetState extends State<MyStatefulWidget> {
         backgroundColor: MyApp.appColor,
       ),
       body: Center(
-        child: _widgetOptions.elementAt(_selectedIndex),
-      ),
+          child: Column(
+        children: [
+          _widgetOptions.elementAt(_selectedIndex),
+        ],
+      )),
       bottomNavigationBar: BottomNavigationBar(
         items: const <BottomNavigationBarItem>[
           BottomNavigationBarItem(
